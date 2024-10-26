@@ -70,7 +70,7 @@ def add_data() -> None:
         with pipeline.sql_client() as client:
             client.execute_sql(""" 
                 INSERT INTO employee_details (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
-                VALUES (901, 'akash', 'kumar', 'kumarakash@gmail.com', '900.507.9833', '2022-08-01', 'lead_eng', 1600, NULL, 13, 60);
+                VALUES (907, 'shanu', 'varma', 'shanu009@gmail.com', '990.111.33', '2003-11-03', 'engineer', 1900, NULL, 75, 25);
             """)
             print("Data inserted successfully!")
     except Exception as e:
@@ -112,8 +112,8 @@ def update_data() -> None:
         with pipeline.sql_client() as client:
             client.execute_sql("""
                 UPDATE employee_details
-                SET email = 'donald@hotmail.com'
-                WHERE employee_id = 198;
+                SET employee_id = 909
+                WHERE employee_id = 1;
             """)
             print("Data updated successfully!")
     except Exception as e:
@@ -169,14 +169,15 @@ def save_as_parquet() -> None:
     except Exception as e:
         print(f"Error saving as Parquet: {e}")
 
-# Operations on Employee data
-# load_source_data()  # Load data from the CSV file
-# create_new_table()  # Create the 'employee_details' table
-add_data()          # Insert new data into the table
-read_data()         # Read the data from the table
-# update_data()       # Update specific data in the table
-# delete_data()     # Uncomment to delete rows from the table
-save_as_parquet()    # Save the table data to Parquet format
 
+#  Operations on Employee data
+if __name__ == "__main__":
+    load_source_data()  # Load data from the CSV file
+    create_new_table()  # Create the 'employee_details' table
+    add_data()          # Insert new data into the table
+    read_data()         # Read the data from the table
+    update_data()       # Update specific data in the table
+    delete_data()     # Uncomment to delete rows from the table
+    save_as_parquet()    # Save the table data to Parquet format
 
 
