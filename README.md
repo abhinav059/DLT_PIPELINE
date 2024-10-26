@@ -1,4 +1,3 @@
-Here’s a short and simple README for your project:
 
 ---
 
@@ -44,5 +43,3 @@ This project demonstrates a simple data pipeline that:
 This project loads data from CSV files, processes it in PostgreSQL with CRUD operations, and saves it as Parquet files for easy storage.
 
 ---
-
-Let me know if you want to add anything else!
