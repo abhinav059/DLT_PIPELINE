@@ -1,0 +1,8 @@
+# put your configuration values here
+[sources.filesystem]
+bucket_url = "/Users/abhinavkumar/Downloads/employees.csv" 
+ # Adjust this to your folder path/Users/abhinavkumar/Downloads/student-dataset.csv
+[runtime]
+dlthub_telemetry = true
+
+

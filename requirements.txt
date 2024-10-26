@@ -1,0 +1,19 @@
+dlt[duckdb]>=1.3.0
+
+# dlt library with PostgreSQL support
+dlt[postgres]
+
+# PostgreSQL adapter for Python
+psycopg2-binary
+
+# Data manipulation and analysis
+pandas
+
+# SQL toolkit and ORM (optional)
+sqlalchemy
+
+# Numerical operations (optional)
+numpy
+
+# Streamlit for creating web apps (optional)
+streamlit
