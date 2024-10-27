@@ -59,6 +59,6 @@ def save_as_parquet() -> None:
 
 
 
-
-# extract_transaction()
-save_as_parquet()
+if __name__ == "main":
+    # extract_transaction()
+    # save_as_parquet()
